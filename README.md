@@ -30,7 +30,14 @@ copy: {
 }
 ...
 grunt.registerTask('twemoji-reveal', ['copy:twemoji'])
-````
+```
+### Add task to package.json
+```js
+scripts: {
+...
+  "start": "grunt twemoji serve"
+}
+```
 ### Add script to `index.html`
 ```html
 <script src="lib/dist/twemoji.min.js"
